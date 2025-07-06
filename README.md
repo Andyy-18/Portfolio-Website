@@ -28,11 +28,4 @@
 
 ---
 
-## 📸 Website Preview
-
-> ⚠️ GIF/video previews not supported here — visit the [live site](https://andyy-18.github.io/Portfolio-Website/) for full experience!
-
----
-
-## 📂 Folder Structure
 
