@@ -16,7 +16,7 @@
 
     <div class="container">
 
-        <video class="back-vid" loop autoplay muted plays-inline src="videos/galaxy.mp4" type="video/mp4"></video>
+        <video class="back-vid" loop autoplay muted plays-inline loading="lazy" src="videos/Cgalaxy.mp4" type="video/mp4"></video>
 
         <header>
             <div class="left">
@@ -65,7 +65,7 @@
         </div>
 
         <div class="blackhole-box">
-            <video loop autoplay muted plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
+            <video loop autoplay muted plays-inline loading="lazy" src="videos/Cblackhole.mp4" type="video/mp4"></video>
         </div>
 
         <section class="hero">
@@ -93,7 +93,7 @@
             </div>
 
             <div class="hero-vid-box">
-                <video class="autoBlur" autoplay loop muted plays-inline src="videos/hero-video2.mp4"
+                <video class="autoBlur" autoplay loop muted plays-inline loading="lazy" src="videos/Chero-video2.mp4"
                     type="video/mp4"></video>
             </div>
 
@@ -110,7 +110,7 @@
                         impactful.</p>
 
 
-                    <img src="pics/grid1.png" alt="card-image">
+                    <img src="pics/grid1.png" loading="lazy" alt="card-image">
                 </div>
 
                 <div class="card">
@@ -120,7 +120,7 @@
                         usability.</p>
 
 
-                    <img src="pics/grid2.png" alt="card-image2">
+                    <img src="pics/grid2.png" loading="lazy" alt="card-image2">
                 </div>
 
                 <div class="card">
@@ -130,7 +130,7 @@
                         ownership.</p>
 
 
-                    <video autoplay loop muted plays-inline src="videos/globe2.mp4" type="video/mp4"></video>
+                    <video autoplay loop muted plays-inline loading="lazy" src="videos/Cglobe2.mp4" type="video/mp4"></video>
                     <a href="#contact-section">
                         <button><i class='bx bx-send'></i>&nbspContact Me</button>
                     </a>
@@ -148,7 +148,7 @@
                     </p>
 
 
-                    <img src="pics/grid4.png" alt="card-image">
+                    <img src="pics/grid4.png" loading="lazy" alt="card-image">
                 </div>
                 
             </div>
@@ -200,7 +200,7 @@
             <!-- Project 3: Portfolio -->
             <div class="project-card">
                 <div class="project-vidbox autoBlur">
-                    <video id="project-video-3" src="videos/portf.mp4"></video>
+                    <video id="project-video-3" src="videos/Cportf.mp4"></video>
                 </div>
                 <div class="project-info fadeInRight">
                     <h1>Animated <span class="gradient">Portfolio</span> Website</h1>
@@ -328,7 +328,7 @@
 
     </div>
 
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <script>
         const form = document.getElementById("contact-form");
         form.addEventListener("submit", async function (e) {
