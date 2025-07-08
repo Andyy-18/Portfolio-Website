@@ -10,13 +10,15 @@
 </head>
 
 <body>
-    <button id="scrollTopBtn" title="Go to top">
+    <button id="scrollTopBtn" title="Go to top" aria-label="Scroll to top">
         <i class='bx bx-up-arrow-alt'></i>
     </button>
 
+
     <div class="container">
 
-        <video class="back-vid" loop autoplay muted plays-inline loading="lazy" src="videos/Cgalaxy.mp4" type="video/mp4"></video>
+        <video class="back-vid" loop autoplay muted plays-inline preload="none" loading="lazy" src="videos/Cgalaxy.webm"
+            type="video/webm"></video>
 
         <header>
             <div class="left">
@@ -33,14 +35,19 @@
 
             <div class="box-icons">
                 <a href="https://drive.google.com/file/d/1wFS-n5fLqI2jCRnn6ppbbwY2KpESikkv/view?usp=sharing"
-                    target="_blank" title="Resume"><i class='bx bx-file'></i></i> </a>
-                <a href="https://github.com/Andyy-18" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/anindabanerjee18/" target="_blank" title="Linkedin"><i
-                        class='bx bxl-linkedin-square'></i></a>
-            </div>
+                    target="_blank" aria-label="View Resume">
+                    <i class='bx bx-file'></i>
+                </a>
+                <a href="https://github.com/Andyy-18" target="_blank" aria-label="Visit GitHub Profile">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anindabanerjee18/" target="_blank"
+                    aria-label="Visit LinkedIn Profile">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
 
 
-            <div class="menu-icon"><i class='bx bx-menu'></i></div>
+                <div class="menu-icon"><i class='bx bx-menu'></i></div>
 
         </header>
 
@@ -56,16 +63,26 @@
             </ul>
             <div class="social-icons">
                 <a href="https://drive.google.com/file/d/1wFS-n5fLqI2jCRnn6ppbbwY2KpESikkv/view?usp=sharing"
-                    target="_blank" title="Resume"><i class='bx bx-file'></i></i> </a>
-                <a href="https://github.com/Andyy-18" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/anindabanerjee18/" target="_blank" title="Linkedin"><i
-                        class='bx bxl-linkedin-square'></i></a>
+                    target="_blank" aria-label="View Resume">
+                    <i class='bx bx-file'></i>
+                </a>
+
+                <a href="https://github.com/Andyy-18" target="_blank" aria-label="Visit GitHub Profile">
+                    <i class='bx bxl-github'></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/anindabanerjee18/" target="_blank"
+                    aria-label="Visit LinkedIn Profile">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+
             </div>
 
         </div>
 
         <div class="blackhole-box">
-            <video loop autoplay muted plays-inline loading="lazy" src="videos/Cblackhole.mp4" type="video/mp4"></video>
+            <video loop autoplay muted plays-inline loading="lazy" preload="none" src="videos/Cblackhole.webm"
+                type="video/webm"></video>
         </div>
 
         <section class="hero">
@@ -86,15 +103,16 @@
                 </p>
                 </p>
 
-                <a href="#contact-section">
+                <a href="#contact-section" aria-label="Contact Me Section">
                     <button><i class='bx bx-send'></i>&nbspContact Me</button>
                 </a>
+
 
             </div>
 
             <div class="hero-vid-box">
-                <video class="autoBlur" autoplay loop muted plays-inline loading="lazy" src="videos/Chero-video2.mp4"
-                    type="video/mp4"></video>
+                <video class="autoBlur" autoplay loop muted plays-inline loading="lazy" src="videos/Chero-video2.webm"
+                    type="video/webm"></video>
             </div>
 
             <div class="scroll-down"></div>
@@ -130,7 +148,8 @@
                         ownership.</p>
 
 
-                    <video autoplay loop muted plays-inline loading="lazy" src="videos/Cglobe2.mp4" type="video/mp4"></video>
+                    <video autoplay loop muted plays-inline loading="lazy" preload="none" src="videos/Cglobe2.webm"
+                        type="video/webm"></video>
                     <a href="#contact-section">
                         <button><i class='bx bx-send'></i>&nbspContact Me</button>
                     </a>
@@ -150,7 +169,7 @@
 
                     <img src="pics/grid4.png" loading="lazy" alt="card-image">
                 </div>
-                
+
             </div>
         </section>
 
@@ -161,7 +180,9 @@
             <!-- Project 1: Sorting Algorithm Visualizer -->
             <div class="project-card">
                 <div class="project-vidbox autoBlur">
-                    <video id="project-video-1" src="videos/sort.mp4"></video>
+                    <video id="project-video-1" preload="auto" autoplay loop muted playsinline
+                        src="videos/sort.webm" type="video/webm"></video>
+
                     <div class="hover-sign"></div>
                 </div>
                 <div class="project-info fadeInRight">
@@ -182,7 +203,9 @@
             <!-- Project 2: Salesforce CRM -->
             <div class="project-card">
                 <div class="project-vidbox autoBlur">
-                    <video id="project-video-2" src="videos/studentCRM.mp4"></video>
+                    <video id="project-video-2" preload="auto" autoplay loop muted playsinline
+                        src="videos/studentCRM.webm" type="video/webm"></video>
+
                 </div>
                 <div class="project-info fadeInRight">
                     <h1>Salesforce <span class="gradient">CRM</span> Application</h1>
@@ -200,7 +223,9 @@
             <!-- Project 3: Portfolio -->
             <div class="project-card">
                 <div class="project-vidbox autoBlur">
-                    <video id="project-video-3" src="videos/Cportf.mp4"></video>
+                    <video id="project-video-3" preload="auto" autoplay loop muted playsinline
+                        src="videos/Cportf.webm" type="video/webm"></video>
+
                 </div>
                 <div class="project-info fadeInRight">
                     <h1>Animated <span class="gradient">Portfolio</span> Website</h1>
@@ -208,7 +233,7 @@
                     <p>This personal portfolio showcases my web skills with background videos, hover animations,
                         responsive design, sidebar navigation, and project previews — fully built using HTML, CSS, and
                         JavaScript with attention to UI/UX.</p>
-                    <a href="https://andyy-18.github.io/Portfolio-Website/" target="_blank">
+                    <a href="https://andyy-18.github.io/Portfolio-Website/" aria-label="GitHub Profile" target="_blank">
                         <button><i class='bx bx-link-external'></i>Live Demo</button>
                     </a>
                 </div>
@@ -222,7 +247,7 @@
                 My Skills 💪
             </h1>
             <div class="skills-box">
-                <img class="skills-image" src="pics/digital brain.png" alt="skills-image">
+                <img class="skills-image" src="pics/digital brain.webp" alt="skills-image">
 
                 <div class="designer autoDisplay">
                     <h1 class="gradient">Problem Solver&nbsp <i class='bx bx-laptop'></i></h1>

@@ -519,7 +519,6 @@ header ul a {
   line-height: 23px;
 }
 
-
 .contact-section {
   width: 80%;
   height: 100vh;
@@ -627,7 +626,6 @@ footer h1 {
   cursor: pointer;
   display: none;
 }
-
 
 /* ✅ FINAL SIDEBAR CSS FOR MOBILE RESPONSIVENESS */
 
@@ -886,10 +884,10 @@ footer h1 {
     max-width: 200px;
     text-wrap: wrap;
   }
-  .designer{
+  .designer {
     margin-top: 10%;
   }
-  .coder{
+  .coder {
     margin-top: 10%;
   }
   footer h1 {
@@ -899,9 +897,16 @@ footer h1 {
 
 /* Mobile Responsiveness */
 
-
 @media screen and (max-width: 700px) {
-  
+  @media screen and (max-width: 700px) {
+    .hero-vid-box {
+      display: none !important;
+    }
+  }
+  .hover-sign {
+    display: none !important;
+  }
+
   header {
     position: fixed;
     height: 50px;
@@ -952,7 +957,7 @@ footer h1 {
 
   .info-cards {
     grid-template-columns: auto;
-    display: flex;  /* Important for order to work */
+    display: flex; /* Important for order to work */
     flex-direction: column;
   }
 
@@ -967,7 +972,7 @@ footer h1 {
     border-radius: 15px;
     text-align: center;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
   }
   .info-cards .card:nth-child(3) {
     order: 4;
@@ -1017,7 +1022,6 @@ footer h1 {
     width: 80%; /* increase size */
     height: 30vh;
     object-fit: cover;
-    
   }
 
   .info-cards .card:nth-child(4) h1 {
@@ -1031,7 +1035,6 @@ footer h1 {
     margin-bottom: 10px;
   }
 
-
   .card:nth-child(3),
   .card:nth-child(4) {
     height: auto;
@@ -1041,6 +1044,9 @@ footer h1 {
 
   .card video {
     width: 100%;
+  }
+  .project-vidbox video {
+    will-change: transform;
   }
 
   .my-project {
@@ -1074,7 +1080,6 @@ footer h1 {
     top: 15%;
     left: 12%;
     right: 12%;
-    
   }
 
   .coder {
@@ -1087,19 +1092,18 @@ footer h1 {
     margin-bottom: 0;
     margin-top: 70px;
   }
-  
+
   .contact-section {
     flex-direction: column;
     margin-top: 100px;
     margin-bottom: 50px;
-    
   }
 
   .contact-section .section-title {
     top: -40px;
     left: 25%;
   }
-  .contact-section .social-box{
+  .contact-section .social-box {
     margin: 10px;
     padding: 10px;
   }
