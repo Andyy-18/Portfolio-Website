@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aninda_Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preload" as="style" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </noscript>
 </head>
 
 <body>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
     <button id="scrollTopBtn" title="Go to top" aria-label="Scroll to top">
         <i class='bx bx-up-arrow-alt'></i>
     </button>
@@ -81,9 +88,15 @@
         </div>
 
         <div class="blackhole-box">
-            <video loop autoplay muted plays-inline loading="lazy" preload="none" src="videos/Cblackhole.webm"
-                type="video/webm"></video>
+            <!-- Desktop Version -->
+            <video class="blackhole-desktop" loop autoplay muted playsinline loading="lazy" preload="auto"
+                src="videos/blackholenew.webm" type="video/webm"></video>
+
+            <!-- Mobile Version -->
+            <video class="blackhole-mobile" loop autoplay muted playsinline loading="lazy" preload="none"
+                src="videos/Cblackhole.webm" type="video/webm"></video>
         </div>
+
 
         <section class="hero">
             <div class="hero-info autoBlur">
@@ -111,7 +124,7 @@
             </div>
 
             <div class="hero-vid-box">
-                <video class="autoBlur" autoplay loop muted plays-inline loading="lazy" src="videos/Chero-video2.webm"
+                <video class="autoBlur" autoplay loop muted plays-inline loading="lazy" src="videos/hero-videonew.webm"
                     type="video/webm"></video>
             </div>
 
@@ -180,8 +193,8 @@
             <!-- Project 1: Sorting Algorithm Visualizer -->
             <div class="project-card">
                 <div class="project-vidbox autoBlur">
-                    <video id="project-video-1" preload="auto" autoplay loop muted playsinline
-                        src="videos/sort.webm" type="video/webm"></video>
+                    <video id="project-video-1" preload="auto" autoplay loop muted playsinline src="videos/sort.webm"
+                        type="video/webm"></video>
 
                     <div class="hover-sign"></div>
                 </div>
@@ -223,8 +236,8 @@
             <!-- Project 3: Portfolio -->
             <div class="project-card">
                 <div class="project-vidbox autoBlur">
-                    <video id="project-video-3" preload="auto" autoplay loop muted playsinline
-                        src="videos/Cportf.webm" type="video/webm"></video>
+                    <video id="project-video-3" preload="auto" autoplay loop muted playsinline src="videos/Cportf.webm"
+                        type="video/webm"></video>
 
                 </div>
                 <div class="project-info fadeInRight">
@@ -354,7 +367,7 @@
     </div>
 
     <script src="app.js" defer></script>
-    <script>
+    <script defer>
         const form = document.getElementById("contact-form");
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
@@ -374,7 +387,7 @@
             }
         });
     </script>
-    <script>
+    <script defer>
         const scrollBtn = document.getElementById("scrollTopBtn");
 
         window.onscroll = function () {

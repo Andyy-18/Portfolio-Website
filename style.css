@@ -8,6 +8,42 @@ body {
 html {
   scroll-behavior: smooth;
 }
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #0b0c10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #72a1de;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ✅ Responsive tweak for smaller devices */
+@media screen and (max-width: 500px) {
+  .spinner {
+    width: 35px;
+    height: 35px;
+    border-width: 4px;
+  }
+}
 
 .container {
   position: relative;
@@ -107,9 +143,23 @@ header ul a {
   justify-content: center;
   mix-blend-mode: lighten;
 }
-.blackhole-box video {
+.blackhole-box {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+.blackhole-desktop {
+  display: block;
   width: 100%;
   margin-top: -23.5%;
+}
+.blackhole-mobile {
+  display: none;
+  width: 100%;
+  margin-top: -16%; /* or adjust as needed */
 }
 
 .hero {
@@ -921,10 +971,13 @@ footer h1 {
     font-size: 25px;
   }
 
-  .blackhole-box video {
-    margin-top: -16%;
+  .blackhole-desktop {
+    display: none !important;
   }
 
+  .blackhole-mobile {
+    display: block !important;
+  }
   .hero {
     flex-direction: column;
   }
