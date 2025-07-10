@@ -1110,6 +1110,7 @@ footer h1 {
     flex-direction: column;
     margin-left: 25%;
     gap: 30px;
+    height: 50%;
   }
 
   .project-info {
@@ -1136,7 +1137,7 @@ footer h1 {
   }
 
   .coder {
-    top: 58%;
+    top: 65%;
     left: 12%;
     right: 12%;
   }
@@ -1148,13 +1149,13 @@ footer h1 {
 
   .contact-section {
     flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 155px;
+    margin-bottom: 80px;
   }
 
   .contact-section .section-title {
-    top: -40px;
-    left: 25%;
+    top: -57px;
+    left: 24%;
   }
   .contact-section .social-box {
     margin: 10px;
